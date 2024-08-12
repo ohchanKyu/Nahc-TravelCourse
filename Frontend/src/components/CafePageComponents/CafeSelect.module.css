@@ -1,0 +1,22 @@
+.container h4 {
+    font-weight: bold;
+    text-align: center;
+}
+.category{
+    font-weight: bold;
+    font-size:20px;
+    text-align: center;
+    margin-top:20px;
+}
+.not_select_container{
+    margin-top:100px;
+    text-align: center;
+}
+.not_select_container h5 {
+    color:red;
+    font-weight: bold;
+}
+.not_select_container p {
+    font-weight: bold;
+    margin-top:20px;
+}

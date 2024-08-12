@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=DM+Serif+Display&family=Dela+Gothic+One&family=Oxygen:wght@700&display=swap');
+
+.time_container{
+    padding : 5% 10%;
+}
+.time_container h4 {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+.header_container{
+    border-top:3px dashed #999;
+    margin-top:20px;
+    display: flex;
+    justify-content: center;
+    padding:10px 0;
+}
+.hour_header,.minute_header{
+    font-weight: bold;
+    font-size: 22px;
+    color: #217af4;
+    width:100px;
+    margin:0 30px;
+    text-align: center;
+}
+.time_box{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.hour_box, .minute_box{
+    height:200px;
+    width:100px;
+    margin:0 30px;
+    overflow-y: scroll;
+    scroll-behavior: auto;
+    padding:0;
+    margin-bottom:0;
+}
+.hour, .minute{
+    text-align: center;
+    font-size:30px;
+    cursor:pointer;
+    font-family: 'DM Serif Display', serif;
+}
+.hour_box::-webkit-scrollbar, .minute_box::-webkit-scrollbar {
+    width: 10px; 
+}
+.hour_box::-webkit-scrollbar-thumb, .minute_box::-webkit-scrollbar-thumb{
+    height: 30%; /* 스크롤바의 길이 */
+    background: #217af4; /* 스크롤바의 색상 */
+    border-radius: 10px;
+}
+.hour_box::-webkit-scrollbar-track, .minute_box::-webkit-scrollbar-track {
+    background: rgba(33, 122, 244, .1);  /*스크롤바 뒷 배경 색상*/
+}
+.time_result{
+    text-align: center;
+    font-weight: bold;
+    font-size:30px;
+    margin-bottom: 5px;
+}
+.time_result span {
+    color: #217af4;
+    font-family: 'DM Serif Display', serif;
+    margin:0 5px 5px 5px;
+}
+.message{
+    color:red;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.button_container{
+    margin-top:20px;
+    display: flex;
+    justify-content: center;
+    border:1px solid #333;
+}
+.cancel_container{
+    border-right:1px solid #333;
+}
+.cancel_container, .submit_container{
+    width:100%;
+    text-align: center;
+    padding:2% 0;
+    font-weight: bold;
+    cursor: pointer;
+}

@@ -1,0 +1,55 @@
+.container{
+    margin:30px 0;
+}
+.main_box{
+    margin-top:10px;
+}
+.flex_box{
+    display: flex;
+}
+.author{
+    font-weight: bold;
+    font-size:18px;
+    margin-bottom: 0;
+}
+.star_container{
+    display: flex;
+    align-items: center;
+}
+.registerDate{
+    font-size:14px;
+    margin-bottom: 0;
+    font-weight: bold;
+    color:#999;
+    margin:5px 0 0 10px;
+}
+.rotate180 {
+    font-size: 25px;
+    transition: transform 0.5s ease; 
+}
+.rotate180.active {
+  transform: rotate(180deg); 
+}
+.detail_text{
+    margin-bottom: 0;
+    width:90%;
+    word-break: keep-all;
+}
+.text{
+    margin-bottom: 0;
+    width:90%;
+    word-break: keep-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.image_list{
+    padding: 0;
+}
+.image{
+    border-radius: 8px;
+    width:250px;
+    margin:10px 0;
+}

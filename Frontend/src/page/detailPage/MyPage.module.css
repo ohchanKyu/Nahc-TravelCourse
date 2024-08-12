@@ -1,0 +1,28 @@
+.select_container{
+    margin-top:30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.content_container{
+    margin:0 auto;
+    width:800px;
+    margin-top:10px;
+    border-radius: 8px;
+    padding:3% 0;
+    text-align: center;
+    background-color: #959df6;
+}
+.favorite_list, .travel_list, .information_list, .review_list{
+    width:200px;
+    height:70px;
+    line-height: 70px;
+    font-weight: bold;
+    font-size:22px;
+    color:#999;
+    cursor: pointer;
+}
+.select{
+    color:rgba(54,143,255,1);
+    border-bottom:2px solid rgba(54,143,255,1);
+}

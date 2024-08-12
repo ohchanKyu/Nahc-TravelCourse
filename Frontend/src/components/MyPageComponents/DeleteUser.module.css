@@ -1,0 +1,70 @@
+.icon{
+    width:200px;
+    background-color:#201d2e;
+    border-radius: 8px;
+    color:#fff;
+    margin:0 auto;
+    padding:2% 0;
+    text-align: center;
+    font-weight: bold;
+}
+.header_text{
+    margin-top:20px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration:underline;
+    font-size:20px;
+}
+.text{
+    text-align: center;
+    font-weight: bold;
+    margin:30px 0;
+}
+.check_list{
+    background-color: #333;
+    border-radius: 8px;
+    color:#fff;
+    padding:3% 4%;
+}
+.check_one, .check_two{
+    font-size:16px;
+    margin:5px 0;
+}
+.check_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+.icon_wrapper{
+    font-size:25px;
+    margin-right:5px;
+    cursor: pointer;
+}
+.is_check{
+    color:#0aba16;
+}
+.message{
+    margin:20px 0 10px 0;
+    text-align: center;
+    font-weight: bold;
+    color: red;
+    font-size: 17px;
+}
+.button_container{
+    margin:20px 0;
+    display: flex;
+    justify-content: center;
+}
+.button_container button {
+    margin:0 15px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 15px;
+    font-family: "paybooc-Light", sans-serif;
+    background-color: #77af9c;
+    color: #d7fff1;
+}

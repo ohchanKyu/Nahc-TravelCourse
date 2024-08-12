@@ -1,0 +1,33 @@
+.container{
+    text-align: center;
+    width: 750px;
+    position: relative;
+}
+.image{
+    width:400px;
+    position: relative;
+}
+.route{
+    position: absolute;
+    z-index: 1;
+    top: 45px;
+    left: 30px;
+}
+.start_location{
+    position: absolute;
+    z-index: 2;
+    top: 30px;
+    left: 3px;
+}
+.end_location{
+    position: absolute;
+    z-index: 2;
+    top: -39px;
+    right: 187px;
+}
+.mid_location{
+    position: absolute;
+    z-index: 2;
+    top: 140px;
+    right: 235px;
+}

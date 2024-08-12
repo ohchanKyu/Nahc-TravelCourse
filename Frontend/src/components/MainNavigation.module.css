@@ -1,0 +1,9 @@
+#main_header{
+    font-weight: bold;
+}
+.user_name{
+    float:right;
+    font-weight:bold;
+    color:white;
+    text-decoration: none;
+}

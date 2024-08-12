@@ -1,0 +1,13 @@
+.address_header{
+    font-size:40px;
+    font-weight: bold;
+    cursor:pointer;
+}
+.address_text{
+    font-size:18px;
+    color:#777;
+    font-weight: bold;
+    padding:0;
+    margin-bottom:0px;
+    margin-left: 60px;
+}

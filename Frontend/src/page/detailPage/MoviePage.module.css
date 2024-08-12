@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=DM+Serif+Display&family=Dela+Gothic+One&family=Oxygen:wght@700&display=swap');
+.movie_container {
+    margin-top:50px;
+    padding-bottom: 40px;
+    background-color: #201d2e;
+}
+.movie_header{
+    font-weight:bold;
+    text-align: center;
+    font-size:30px;
+}
+.movie_header{
+    padding-top:60px;
+    color:white;
+}
+.movie_text{
+    font-weight:bold;
+    text-align: center;
+    font-size:25px;
+    color:#444;
+    margin-bottom:50px;
+    color:white;
+}
+.movie_list_container{
+    margin:0 auto;
+    width:1200px;
+}
+.result_container{
+    background-color: #201d2e;
+}

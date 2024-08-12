@@ -1,0 +1,76 @@
+.form_container{
+    width:100%;
+    padding:20px;
+}
+.find_id_header {
+    color : rgb(255, 162, 0);
+    font-weight:bold;
+    font-style: italic;
+    font-size:30px;
+    text-align: center;
+    margin-bottom:30px;
+}
+.find_id_text{
+    font-size:20px;
+    font-weight: bold;
+}
+
+.name_label{
+    display:block;
+    padding:3.5px 3px 3px;
+    font-size:16px;
+    color:#666;
+    margin-bottom:5px;
+    font-weight:bold;
+}
+.email_label{
+    display:block;
+    padding:3.5px 3px 3px;
+    font-size:16px;
+    color:red;
+    margin-bottom:5px;
+    font-weight:bold;
+}
+
+.name_input {
+    display:block;
+    height:35px;
+    padding:5px 5px;
+    border:1px solid #dadada;
+    border-radius: 3px;
+    background-color:#fff;
+    color:#333;
+    font-size: 14px;
+    box-sizing:border-box;
+    width:300px;
+    font-weight: bold;
+}
+.button_container {
+    margin-top:20px;
+}
+.error_message{
+    color : red;
+    font-size:12px;
+    font-weight:bold;
+    margin:0;
+}
+#find_id_button {
+    width: 300px;
+}
+
+.find_email_container{
+    margin-top:20px;
+}
+.email_text{
+    font-size:12px;
+    font-weight: bold;
+    color:#333;
+}
+.email_list{
+    padding : 0;
+}
+.email_item{
+    font-size:16px;
+    font-weight: bold;
+    list-style: none;
+}

@@ -1,0 +1,46 @@
+.container h4 {
+    font-weight: bold;
+}
+.place_list{
+    display: flex;
+    justify-content: center;
+}
+.place_list_header, .address_header , .place_result{
+    margin-top:20px;
+    font-weight: bold;
+    color:rgb(233 116 37);
+    font-size: 22px;
+    opacity: 1 !important;
+}
+.place_result{
+    margin-top:10px;
+    color : #77af9c;
+}
+.address_header{
+    margin-top:30px;
+    color:#fff;
+}
+.address_header span{
+    cursor: pointer;
+}
+.result{
+    margin-top:10px;
+    font-weight: bold;
+    font-size:18px;
+}
+.submit_button {
+    font-weight: 600;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 15px;
+    font-family: "paybooc-Light", sans-serif;
+    background-color: #77af9c;
+    color: #d7fff1;
+    margin-top:30px;
+}
+.error_messgage{
+    font-weight: bold;
+    margin-top:20px;
+    text-align: center;
+    color:red;
+}

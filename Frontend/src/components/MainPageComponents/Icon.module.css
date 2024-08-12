@@ -1,0 +1,13 @@
+.icon_container{
+    text-align: center;
+    cursor: pointer;
+    width:120px !important;
+    margin:0 12px;
+}
+.icon_image{
+    font-size:100px;
+}
+.icon_title{
+    font-size: 16px;
+    font-weight: bold;
+}

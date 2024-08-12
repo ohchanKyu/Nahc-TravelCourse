@@ -1,0 +1,49 @@
+.container{
+    border-radius: 8px;
+    background-color: #fff;
+    width:480px !important;
+    box-shadow: 4px 8px 8px rgba(69, 41, 114, 0.7);
+    margin:0 auto;
+}
+.user_header{
+    text-align: center;
+    padding:5% 0;
+}
+.user_header h4 {
+    width:200px;
+    background-color:#201d2e;
+    border-radius: 8px;
+    color:#fff;
+    margin:0 auto;
+    padding:2% 0;
+    text-align: center;
+    font-weight: bold;
+}
+.user_email{
+    font-weight: bold;
+    color:#888;
+    font-size:16px;
+    margin-bottom:20px;
+}
+.user_text_box{
+    margin-top:30px;
+    text-align: center;
+    font-weight: bold;
+}
+.user_name{
+    font-size:22px;
+    margin-bottom: 0;
+}
+.user_text_box button {
+    margin:0 10px;
+    font-weight: 600;
+    font-size:14px;
+    border: none;
+    padding: 7px 20px;
+    border-radius: 15px;
+    background-color: rgba(54,143,255,1);;
+    color: #d7fff1;
+}
+.user_detail_container{
+    border-top:3px solid #999;
+}

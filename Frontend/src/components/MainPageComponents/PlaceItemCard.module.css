@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+.card_container{
+    width:300px !important;
+    box-shadow: 4px 8px 8px rgb(243 213 236 / 70%);
+    margin:0 40px;
+    padding:0;
+}
+.card_title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 23px;
+    color: #01492f;
+    word-break: keep-all;
+    border-bottom: 2px solid #d4ebe3;
+    padding-top:10px;
+    padding-bottom: 20px;
+}
+.card_image{
+    height: 200px;
+    padding:0;
+}
+.card_nav_container{
+    margin-top:20px;
+    display: flex;
+    justify-content: center;
+}
+.card_nav_container p {
+    margin:0 10px;
+}
+.card_text{
+    padding:10px 0;
+    font-size: 14px;
+    font-weight: bold;
+    color:#000; 
+    margin:5px 0 0 0;
+    border-bottom: 1px solid #999;
+}
+.route_error{
+    color:red !important;
+}
+.card_nav_place, .card_nav_trafiic, .card_nav_favorite{
+    font-size: 12px;
+    font-weight: bold;
+}
+.wrapper{
+    text-align: center;
+}
+.button{
+    margin:20px 0 10px 0;
+    font-weight: 600;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 15px;
+    font-family: "paybooc-Light", sans-serif;
+    background-color: #77af9c;
+    color: #d7fff1;
+}
+.message{
+    font-weight: bold;
+    text-align: center;
+    font-size: 12px;
+    opacity: 0.6;
+}
+.traffic_container span{
+    color:#000;
+}

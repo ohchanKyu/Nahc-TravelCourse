@@ -1,0 +1,16 @@
+.container h4 {
+    font-weight: bold;
+    text-align: center;
+    margin-top:50px;
+    color:rgb(233 116 37);
+}
+.text{
+    margin-top:20px;
+    font-weight: bold;
+    margin-left:100px;
+    font-size:20px;
+}
+.message{
+    text-align: center;
+    margin-top:20px;
+}

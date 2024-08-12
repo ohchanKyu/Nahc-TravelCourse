@@ -1,0 +1,27 @@
+.icon_container{
+    width:80px;
+    margin:10px 10px;
+    position: relative;
+}
+.icon_image{
+    width:80px;
+    height:80px;
+    border-radius: 5px;
+}
+.cancel_icon{
+    font-size:22px;
+    cursor: pointer;
+    position:absolute;
+    background-color: white;
+    border-radius:15px;
+    left:60px;
+    z-index: 3;
+}
+.icon_title{
+    font-weight: bold;
+    white-space: nowrap;     
+    overflow: hidden;       
+    text-overflow: ellipsis;  
+    margin-bottom: 0px;
+    text-align: center;
+}

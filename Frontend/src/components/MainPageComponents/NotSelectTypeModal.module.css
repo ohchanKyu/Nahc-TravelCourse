@@ -1,0 +1,24 @@
+.container h4{
+    text-align: center;
+    font-weight: bold;
+    color:red;
+    padding:3% 0;
+    border-bottom: 2px solid #999;
+}
+.container p {
+    margin-top:20px;
+    font-weight: bold;
+    color:#555;
+    text-align: center;
+}
+.container h5 {
+    font-weight: bold;
+    color:#0aba16;
+    margin-left:30px;
+}
+.container ul {
+    padding-left:55px;
+}
+.container li {
+    font-weight: bold;
+}

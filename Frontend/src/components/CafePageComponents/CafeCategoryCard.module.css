@@ -1,0 +1,26 @@
+.card_container{
+    height:220px;
+    cursor: pointer;
+}
+.card_header{
+    font-weight: bold;
+    text-align: center;
+    font-size:20px;
+    font-style: italic;
+}
+.card_title{
+    font-weight: bold;
+    font-size: 18px;
+    color:rgb(233 116 37);
+    text-align: center;
+    word-break: keep-all;
+    margin-bottom: 0;
+}
+.card_text{
+    font-size:14px;
+    font-weight: bold;
+    color:#555;
+    margin-top:10px;
+    word-break: keep-all;
+    text-align: center;
+}

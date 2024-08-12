@@ -1,0 +1,45 @@
+.input_container{
+    padding : 0 12%;
+}
+.header_text{
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.input_container input{
+    display:block;
+    height:35px;
+    padding:5px 5px;
+    border:1px solid #dadada;
+    border-radius: 3px;
+    background-color:#fff;
+    color:#333;
+    font-size: 14px;
+    box-sizing:border-box;
+    width:300px;
+    font-weight: bold;
+    margin-left:75px;
+    margin-bottom: 30px;
+}
+.input_menu{
+    text-align: left;
+    margin-left:40px;
+    font-weight: bold;
+    color:rgb(233 116 37);
+}
+.input{
+    font-weight: bold;
+    margin-left:40px;
+}
+.submit_button{
+    margin-left:40px;
+    float:right;
+    font-weight: bold;
+}
+.message{
+    font-weight: bold;
+    margin-top:10px;
+    font-size:20px;
+    word-break: keep-all;
+    margin-left:73px;
+}

@@ -1,0 +1,68 @@
+.container{
+    border-left:3px solid #999;
+    display: flex;
+    align-items: center;
+    margin-left:10px;
+    position: relative;
+}
+.order_bar{
+    position: absolute;
+    right:688px;
+    z-index: 3;
+    background-color: #a4fba4;
+    font-weight: bold;
+    color:#000;
+    border-radius:20px;
+    text-align: center;
+    line-height:250%;
+    width:40px;
+    height: 40px;
+}
+.note_card_container {
+    display: flex;
+    align-items: center;
+    width:500px !important;
+    margin:30px 0 30px 100px;
+    background-color: #a4fba4;
+    border-radius: 8px;
+    padding: 3% 5%;
+    font-weight: bold;
+    box-shadow: 4px 8px 8px rgba(109 109 109 / 70%);
+}
+.time_box{
+    margin-top:5px;
+    padding:2% 8%;
+    width:70px;
+    background-color: #616464;
+    position: absolute;
+    right:-17px;
+    border-radius: 8px;
+}
+.time{
+    font-weight: bold;
+    margin-bottom: 0;
+    color:#fff;
+}
+.note_text_container{
+    width:70%;
+    font-weight: bold;
+    font-size: 20px;
+    word-wrap: break-word;
+    word-break: keep-all;
+    padding-right: 10%;
+}
+.button_container{
+    float: right;
+    padding:0;
+}
+.button_container p {
+    font-size:15px;
+    font-weight: bold;
+    color:white;
+    padding:10px 20px;
+    border-radius: 8px;
+    margin:10px 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: #77af9c;
+}

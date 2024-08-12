@@ -1,0 +1,39 @@
+.note_container{
+    padding : 5% 10%;
+}
+.note_container h4 {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+.note_container textarea{
+    margin-top:10px;
+    width:450px;
+    height: 200px;
+    border-radius: 8px;
+    padding:3% 5%;
+    font-weight: bold;
+}
+.message{
+    color:red;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top:10px;
+}
+.button_container{
+    margin-top:20px;
+    display: flex;
+    justify-content: center;
+    border:1px solid #333;
+}
+.cancel_container{
+    border-right:1px solid #333;
+}
+.cancel_container, .submit_container{
+    width:100%;
+    text-align: center;
+    padding:2% 0;
+    font-weight: bold;
+    cursor: pointer;
+}

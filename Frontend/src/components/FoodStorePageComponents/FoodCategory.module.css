@@ -1,0 +1,63 @@
+.category_container{
+    padding: 0 10%;
+}
+.category_container h4 {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom:20px;
+}
+.category_container ul {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.category_container li{
+    border-radius:50%;
+    background-color: rgb(233 116 37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    width: calc(3em / 0.7);
+    height: calc(3em / 0.7);
+    text-align: center;
+    margin:0 10px;
+}
+.select_container{
+    padding:0 3%;
+}
+.select_container select{
+    width:150px;
+    height:40px;
+    font-weight: bold;
+    color:#000;
+    border-radius: 5%;
+    margin-bottom:20px;
+    padding:4px;
+}
+.select, .select_menu{
+    font-weight: bold;
+}
+.select_menu{
+    font-size:20px;
+    color:rgb(233 116 37);
+}
+.select{
+    font-size:20px;
+    font-weight: bold;
+    margin-top:10px;
+}
+.user_select{
+    display:inline;
+}
+.submit_button{
+    font-weight: bold;
+}
+.message{
+    font-weight: bold;
+    margin-top:10px;
+    font-size:14px;
+    word-break: keep-all;
+    margin-bottom:0px;
+}

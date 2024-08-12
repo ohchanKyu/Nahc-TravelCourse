@@ -1,0 +1,59 @@
+.container h4 {
+    font-weight: bold;
+    text-align: center;
+}
+.place_text{
+    margin-top:40px;
+    font-size: 22px;
+    font-weight: bold;
+    padding:0 10%;
+}
+.place_text span {
+    font-size:18px;
+    word-break: keep-all;
+    color:#0aba16;
+}
+.back_button{
+    font-weight: 600;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 15px;
+    font-family: "paybooc-Light", sans-serif;
+    background-color: #77af9c;
+    color: #d7fff1;
+    margin-top:20px;
+}
+.date_button{
+    font-weight: 600;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 15px;
+    font-family: "paybooc-Light", sans-serif;
+    background-color: #77af9c;
+    color: #d7fff1;
+    margin-top:20px;
+}
+.select_date_container{
+    margin-top:30px;
+    display: flex;
+    justify-content: center;
+}
+.message{
+    margin-top:20px;
+    opacity: 0.8;
+}
+.error_messgage{
+    font-weight: bold;
+    margin-top:20px;
+    text-align: center;
+    color:red;
+    word-break: keep-all;
+}
+.select_date_container span {
+    background-color: #1ecc92;
+    padding:2% 5%;
+    border-radius: 15px;
+    margin:0 20px;
+    font-weight: bold;
+    cursor: pointer;
+}

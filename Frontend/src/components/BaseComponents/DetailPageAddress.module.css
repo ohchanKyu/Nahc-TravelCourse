@@ -1,0 +1,41 @@
+.address_header{
+    color:#201d2e;
+    margin-bottom:40px;
+    font-weight:bold;
+    text-align: center;
+    font-size:30px;
+}
+.address_container{
+    padding:3% 10%;
+    padding-bottom:0;
+    background-color: #eeeeee;
+}
+.address_sub_header{
+    margin-left:30px;
+    font-size:40px;
+    font-weight: bold;
+}
+.address_text_container{
+    margin-bottom:30px;
+}
+.address_text{
+    margin-left:90px;
+    margin-bottom:0px;
+    font-size:18px;
+    color:#777;
+    font-weight: bold;
+    padding:0;
+    word-break: keep-all;
+}
+.result_header{
+    color: rgb(233 116 37);
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    margin: 40px 0;
+}
+.current_menu{
+    font-weight: bold;
+    margin:10px 0 0 90px;
+    font-size:20px;
+}

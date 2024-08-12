@@ -1,0 +1,13 @@
+.container h4{
+    font-weight: bold;
+    text-align: center;
+}
+.category_container{
+    margin-top:40px;
+}
+.message{
+    margin-top:20px;
+    margin-bottom:0px;
+    opacity: 0.6;
+    text-align:center;
+}

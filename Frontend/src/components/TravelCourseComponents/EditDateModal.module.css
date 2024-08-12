@@ -1,0 +1,41 @@
+.container h4 {
+    font-weight: bold;
+    text-align: center;
+    margin:20px 0;
+}
+.button_container{
+    display: flex;
+    justify-content: center;
+    margin-top:30px;
+}
+.date_button, .cancel_button{
+    font-weight: 600;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 15px;
+    font-family: "paybooc-Light", sans-serif;
+    background-color: #77af9c;
+    color: #d7fff1;
+    margin:0 20px;
+}
+.select_date_container{
+    margin-top:30px;
+    display: flex;
+    justify-content: center;
+    color:#fff;
+}
+.error_messgage{
+    font-weight: bold;
+    text-align: center;
+    color:red;
+    word-break: keep-all;
+    margin-top:20px;
+}
+.select_date_container span {
+    background-color: #1ecc92;
+    padding:2% 5%;
+    border-radius: 15px;
+    margin:0 20px;
+    font-weight: bold;
+    cursor: pointer;
+}

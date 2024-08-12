@@ -1,0 +1,28 @@
+.edit_container, .show_container{
+    padding:3% 0;
+}
+.edit_list{
+    padding:0;
+}
+.edit_list li{
+    margin:0 5px;
+    list-style:none;
+    border-radius: 30%;
+    width:100px;
+    height: 100px;
+    cursor:pointer;
+}
+.edit_list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.edit_list p {
+    margin-top:5px;
+    font-size:14px;
+    font-weight: bold;
+}
+.icon{
+    margin-top:20px;
+    font-size:35px;
+}

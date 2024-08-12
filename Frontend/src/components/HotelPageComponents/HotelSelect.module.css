@@ -1,0 +1,30 @@
+.container{
+    text-align: center;
+}
+.container h4{
+    font-weight: bold;
+}
+.select_title{
+    font-weight: bold;
+    color:#0aba16;
+    font-size:20px;
+    margin-top:30px;
+}
+.select_image{
+    width:200px;
+}
+.message{
+    margin-top:20px;
+    opacity: 0.7;
+}
+.not_select_container{
+    margin-top:100px;
+}
+.not_select_container h5 {
+    color:red;
+    font-weight: bold;
+}
+.not_select_container p {
+    font-weight: bold;
+    margin-top:20px;
+}

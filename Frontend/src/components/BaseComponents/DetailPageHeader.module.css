@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=DM+Serif+Display&family=Dela+Gothic+One&family=Oxygen:wght@700&display=swap');
+
+.left_header_container{
+    background-color: #201d2e;
+    height:400px;
+    color:white;
+    font-weight: bold;
+    position: relative;
+}
+.left_header_container h1{
+    position:absolute;
+    top:30%;
+    right:25%;
+    font-size:50px;
+    font-family: 'DM Serif Display', serif;
+}
+.right_header_container{
+    background-color:  #201d2e;
+    height:400px;
+    font-weight: bold;
+    padding:3% 5%;
+    display: flex;
+    color:white !important;
+    border-left:2px dashed #fff;
+}
+.right_header_container h1 {
+    font-family: 'DM Serif Display', serif;
+    margin-top:80px;
+}
+.nav_list{
+    margin-top:40px;
+    margin-left:50px;
+    text-align: center;
+}
+.nav_list p {
+    font-size:20px;
+}
+.nav_list li {
+    opacity: 0.6;
+    margin:7px 0;
+    font-style: italic;
+}
+.header_image{
+    margin-left:30px;
+    transform: rotate( 25deg );
+}
+.header_icon{
+    position: absolute;
+    font-size: 60px;
+    color:aqua;
+    top:40px;
+    left:390px;
+    transform: rotate( 25deg );
+}
+.header_sub_text{
+    text-align: center;
+}

@@ -1,0 +1,100 @@
+.container{
+    height:500px;
+    overflow-y: scroll;
+    scroll-behavior: auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: -4px 0 8px rgba(140, 137, 137, 0.1), /* 왼쪽 그림자 */
+    0 -4px 8px rgba(140, 137, 137, 0.1), /* 위쪽 그림자 */
+    0 4px 8px rgba(140, 137, 137, 0.1); /* 아래쪽 그림자 */
+}
+.container::-webkit-scrollbar {
+    width: 10px; 
+}
+.container::-webkit-scrollbar-thumb {
+    height: 10%; /* 스크롤바의 길이 */
+    background: #94a9c5; /* 스크롤바의 색상 */
+    border-radius: 10px;
+}
+.container::-webkit-scrollbar-track {
+    background: rgba(33, 122, 244, .1);  /*스크롤바 뒷 배경 색상*/
+}
+.header{
+    padding-top:30px;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    color:#01492f;
+}
+.information_box{
+    margin-top:30px;
+    padding:0 8%;
+    font-weight: bold;
+}
+.box{
+    width:220px;
+}
+.information_box span{
+    font-size: 18px;
+    color:#0aba16;
+}
+.information{
+    color:#888;
+}
+.write{
+    margin-top:20px;
+    float: right;
+    text-align: center;
+    font-weight: 600;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 15px;
+    background-color: #77af9c;
+    color: #d7fff1;
+    cursor: pointer;
+}
+.star_text{
+    margin-right:20px;
+    font-size:25px;
+    font-weight: bold;
+    color:#888;
+}
+.star_text span{
+    font-size:25px;
+    font-weight: bold;
+    color:#000;
+}
+.star_container{
+    border-bottom: 1px solid;
+    padding-bottom: 20px;
+    clear: both;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.review_list{
+    padding:0 8%;
+}
+.review_list li {
+    list-style: none;
+}
+.message{
+    color:red;
+    text-align: center;
+    font-weight: bold;
+    margin:20px 0;
+}
+.button_container{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.more_button{
+    text-align: center;
+    font-weight: 600;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 15px;
+    background-color: #77af9c;
+    color: #d7fff1;
+    cursor: pointer;
+}

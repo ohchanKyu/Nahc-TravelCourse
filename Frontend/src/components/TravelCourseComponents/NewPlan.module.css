@@ -1,0 +1,54 @@
+.new_plan_result_container h4{
+    font-weight: bold;
+    text-align: center;
+    padding-top:2%;
+    padding-bottom:3%;
+    border-bottom: 2px solid gray;
+}
+.new_plan_result_container{
+    padding: 0 10%;
+}
+.place_header, .date_header{
+    margin-top:20px;
+    font-weight: bold;
+    font-size:22px;
+    margin-bottom: 0;
+}
+.place_result , .date_result{
+    font-weight: bold;
+    color:#217af4;
+    font-size:18px;
+    word-break: keep-all;
+}
+.place_result, .date_result{
+    margin-left:30px;
+}
+.message{
+    text-align: left;
+    font-weight: bold;
+    color:#333;
+    margin-left: 30px;
+}
+.button_container{
+   display: flex;
+   justify-content: center;
+   margin-top:30px;
+}
+.reset_button{
+    margin:0 15px;
+    font-weight: 600;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 15px;
+    background-color: red;
+    color: #d7fff1;
+}
+.complete_button{
+    margin:0 15px;
+    font-weight: 600;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 15px;
+    background-color: #0aba16;
+    color: #d7fff1;
+}

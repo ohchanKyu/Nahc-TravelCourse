@@ -1,0 +1,78 @@
+.modal_header{
+    font-size:20px;
+    font-weight: bold;
+    color:red;
+    text-align: center;
+}
+.modal_sub_header{
+    font-size: 16px;
+    font-weight: bold;
+    color:#555;
+    text-align: center;
+}
+.modal_section{
+   text-align: center;
+   font-weight: bold;
+   color:#999;
+   margin:0;
+   word-break: keep-all;
+}
+.button_container{
+    margin-top:30px;
+    text-align: right;
+}
+#go_page_button{
+    margin-right:15px;
+}
+.input_container{
+    width:300px;
+    margin:0 auto;
+    margin-top:20px;
+}
+.input_label{
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin:5px 0;
+}
+.input_box{
+    height:35px;
+    padding:5px 5px;
+    border:1px solid #dadada;
+    border-radius: 8px;
+    background-color:#fff;
+    color:#333;
+    font-size: 14px;
+    box-sizing:border-box;
+    width:300px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.edit_button_container{
+    margin-top:20px;
+    display: flex;
+    justify-content: center;
+}
+.submit_button, .cancel_button{
+    font-weight: 600;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 15px;
+    font-family: "paybooc-Light", sans-serif;
+    background-color: #77af9c;
+    color: #d7fff1;
+    margin:0 20px;
+}
+.error_message{
+    font-size: 14px;
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}
+.success_message{
+    margin-top:20px;
+    font-size: 14px;
+    text-align: center;
+    color: #0aba16;
+    font-weight: bold;
+}

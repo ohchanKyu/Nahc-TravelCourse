@@ -1,0 +1,91 @@
+.container{
+    height:500px;
+    overflow-y: scroll;
+    scroll-behavior: auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: -4px 0 8px rgba(140, 137, 137, 0.1), /* 왼쪽 그림자 */
+                0 -4px 8px rgba(140, 137, 137, 0.1), /* 위쪽 그림자 */
+                0 4px 8px rgba(140, 137, 137, 0.1); /* 아래쪽 그림자 */
+}
+.container::-webkit-scrollbar {
+    width: 10px; 
+}
+.container::-webkit-scrollbar-thumb {
+    height: 10%; /* 스크롤바의 길이 */
+    background: #94a9c5; /* 스크롤바의 색상 */
+    border-radius: 10px;
+}
+.container::-webkit-scrollbar-track {
+    background: rgba(33, 122, 244, .1);  /*스크롤바 뒷 배경 색상*/
+}
+.place_image{
+    width:100%;
+}
+.text_box{
+    padding:0 5%;
+}
+.title{
+    font-weight: bold;
+    word-break: keep-all;
+    margin:20px 0;
+    color:#01492f;
+    text-align: center;
+}
+.review{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #555;
+    padding-bottom: 3%;
+}
+.rating{
+    font-size:18px;
+    font-weight: bold;
+}
+.review_count{
+    margin-left:20px;
+    font-weight: bold;
+    font-size:18px;
+}
+.address, .phone, .international_phone,.openNow{
+    margin:15px 0 0 0;
+    word-break: keep-all;
+    font-size:18px;
+    font-weight: bold;
+}
+.phone span, .international_phone span{
+    color:#888;
+    margin-left:5px;
+} 
+.rotate180 {
+    font-size: 25px;
+    transition: transform 0.5s ease; 
+}
+.rotate180.active {
+  transform: rotate(180deg); 
+}
+.weekday_list{
+    padding-left:23px;
+}
+.date{
+    margin:5px 0;
+    font-weight: bold;
+    color:#888;
+}
+.wrapper{
+    width:200px;
+    margin:0 auto;
+}
+.kakao{
+    width:200px;
+    text-align: center;
+    font-weight: 600;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 15px;
+    font-family: "paybooc-Light", sans-serif;
+    background-color: #77af9c;
+    color: #d7fff1;
+    cursor: pointer;
+    margin:20px 0 30px 0;
+}

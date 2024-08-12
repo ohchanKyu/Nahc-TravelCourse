@@ -1,0 +1,40 @@
+.card_container{
+    width:200px;
+    margin:10px;
+    display: flex;
+}
+.card_text{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    margin:0;
+}
+.title{
+    word-break:  keep-all;
+    font-weight: bold;
+}
+.modal_container{
+    display: inline-flex;
+    flex-wrap: wrap;
+    width:100%;
+    padding:0;
+}
+.modal_list_group{
+    font-weight: bold;
+    font-size:14px;
+}
+.modal_description{
+    margin-left:20px;
+    width:300px;
+    word-break: keep-all;
+    margin-top:5px;
+    font-size:14px;
+    font-weight: bold;
+    color:#000;
+}
+.modal_summary{
+    color:#333;
+    font-weight:bold;
+}

@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=DM+Serif+Display&family=Dela+Gothic+One&family=Oxygen:wght@700&display=swap');
+
+.container{
+  margin:40px 0;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding:2% 3%;
+  box-shadow: 4px 8px 8px rgba(56, 50, 55, 0.7);
+}
+.day_container{
+  padding-bottom:10px;
+}
+.day{
+    font-weight: bold;
+    font-size: 30px;
+    margin-right:20px;
+    font-family: 'DM Serif Display', serif;
+}
+.date{
+    font-weight:bold;
+    color:#999;
+    font-size: 25px;
+    margin-right:10px;
+}
+.rotate180 {
+    font-size: 25px;
+    transition: transform 0.5s ease; 
+}
+  
+.rotate180.active {
+  transform: rotate(180deg); 
+}
+
+.component_container {
+    clear: both;
+    animation: slide-down 300ms ease-out forwards;
+    border-top:2px solid #333;
+}
+.button_container button {
+  margin:20px 10px 10px 10px;
+  font-weight: 600;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-family: "paybooc-Light", sans-serif;
+  background-color: #77af9c;
+  color: #d7fff1;
+}
+.button_container{
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.place_list_container{
+    margin-top:20px;
+}
+.place_list{
+  padding:0 40px;
+}
