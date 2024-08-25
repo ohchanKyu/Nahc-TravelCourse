@@ -171,5 +171,353 @@ Triple 어플을 응용한 웹 사이트이다. <br>
 ### 아키텍쳐
 #### 디렉터리 구조
 ```
+- BackEnd -
+📦src
+ ┣ 📂image
+ ┃ ┗ 📜not_select_image.jpg
+ ┣ 📂main
+ ┃ ┣ 📂java
+ ┃ ┃ ┗ 📂com
+ ┃ ┃ ┃ ┗ 📂example
+ ┃ ┃ ┃ ┃ ┗ 📂TravelCourseApplication
+ ┃ ┃ ┃ ┃ ┃ ┣ 📂config
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜SecurityConfig.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜SecurityUtil.java
+ ┃ ┃ ┃ ┃ ┃ ┣ 📂controller
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜AuthController.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜DayComponentController.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜LocationController.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜MovieController.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜ReviewController.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜RouteController.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜TravelPlanController.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜UserController.java
+ ┃ ┃ ┃ ┃ ┃ ┣ 📂converter
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜StringListConverter.java
+ ┃ ┃ ┃ ┃ ┃ ┣ 📂dto
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜Authority.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜DayComponent.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜DayComponentNote.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜DayComponentPlace.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜FavoritePlace.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜GoogleReview.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜Location.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜Member.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜Movie.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜Place.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜RefreshToken.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜Token.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜TravelPlan.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜UserReview.java
+ ┃ ┃ ┃ ┃ ┃ ┣ 📂jwt
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜JwtAccessDeniedHandler.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜JwtAuthenticationEntryPoint.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜JwtFilter.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜JwtSecurityConfig.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜TokenProvider.java
+ ┃ ┃ ┃ ┃ ┃ ┣ 📂repository
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜DayComponentNoteRepository.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜DayComponentPlaceRepository.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜DayComponentRepository.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜FavoritePlaceRepository.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜MovieRepository.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜PlaceRepository.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜RefreshTokenRepository.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜TravelPlanRepository.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜UserRepository.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜UserReviewRepository.java
+ ┃ ┃ ┃ ┃ ┃ ┣ 📂service
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜AuthService.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜CustomUserDetailsService.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜DayComponentService.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜LocationService.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜MailService.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜MovieService.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜PlaceDetailService.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜PlaceImageService.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜ReviewService.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜RouteService.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜TravelPlanService.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜UserService.java
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜TravelCourseApplication.java
+ ┃ ┗ 📂resources
+ ┃ ┃ ┗ 📜application.properties
+ ┣ 📂reviewImage
+ ┃ ┣ 📜2f84637a-d2d8-4746-b12b-12f042692fdc.png
+            ...
 
+- FrontEnd -
+📦src
+ ┣ 📂api
+ ┃ ┣ 📜CategoryApiService.js
+ ┃ ┣ 📜DayComponentApiService.js
+ ┃ ┣ 📜FavoritePlaceApiService.js
+ ┃ ┣ 📜LocationApiService.js
+ ┃ ┣ 📜ReviewApiService.js
+ ┃ ┣ 📜RouteApiService.js
+ ┃ ┣ 📜TravelPlanApiService.js
+ ┃ ┗ 📜UserApiService.js
+ ┣ 📂components
+ ┃ ┣ 📂BaseComponents
+ ┃ ┃ ┣ 📜DetailPageAddress.jsx
+ ┃ ┃ ┣ 📜DetailPageAddress.module.css
+ ┃ ┃ ┣ 📜DetailPageHeader.jsx
+ ┃ ┃ ┣ 📜DetailPageHeader.module.css
+ ┃ ┃ ┣ 📜DetailPageSummary.jsx
+ ┃ ┃ ┗ 📜DetailPageSummary.module.css
+ ┃ ┣ 📂CafePageComponents
+ ┃ ┃ ┣ 📜CafeCategory.jsx
+ ┃ ┃ ┣ 📜CafeCategory.module.css
+ ┃ ┃ ┣ 📜CafeCategoryCard.jsx
+ ┃ ┃ ┣ 📜CafeCategoryCard.module.css
+ ┃ ┃ ┣ 📜CafeIcon.jsx
+ ┃ ┃ ┣ 📜CafeIcon.module.css
+ ┃ ┃ ┣ 📜CafeSelect.jsx
+ ┃ ┃ ┣ 📜CafeSelect.module.css
+ ┃ ┃ ┣ 📜FirstType.jsx
+ ┃ ┃ ┣ 📜FirstType.module.css
+ ┃ ┃ ┣ 📜SecondType.jsx
+ ┃ ┃ ┣ 📜SecondType.module.css
+ ┃ ┃ ┣ 📜ThirdType.jsx
+ ┃ ┃ ┗ 📜ThirdType.module.css
+ ┃ ┣ 📂FoodStorePageComponents
+ ┃ ┃ ┣ 📜FoodCategory.jsx
+ ┃ ┃ ┣ 📜FoodCategory.module.css
+ ┃ ┃ ┣ 📜FoodInput.jsx
+ ┃ ┃ ┗ 📜FoodInput.module.css
+ ┃ ┣ 📂HotelPageComponents
+ ┃ ┃ ┣ 📜HotelCategory.jsx
+ ┃ ┃ ┣ 📜HotelCategory.module.css
+ ┃ ┃ ┣ 📜HotelIcon.jsx
+ ┃ ┃ ┣ 📜HotelIcon.module.css
+ ┃ ┃ ┣ 📜HotelSelect.jsx
+ ┃ ┃ ┗ 📜HotelSelect.module.css
+ ┃ ┣ 📂MainPageComponents
+ ┃ ┃ ┣ 📜Address.jsx
+ ┃ ┃ ┣ 📜Address.module.css
+ ┃ ┃ ┣ 📜Category.jsx
+ ┃ ┃ ┣ 📜Category.module.css
+ ┃ ┃ ┣ 📜Icon.jsx
+ ┃ ┃ ┣ 📜Icon.module.css
+ ┃ ┃ ┣ 📜NotSelectTypeModal.jsx
+ ┃ ┃ ┣ 📜NotSelectTypeModal.module.css
+ ┃ ┃ ┣ 📜PlaceDetail.jsx
+ ┃ ┃ ┣ 📜PlaceDetail.module.css
+ ┃ ┃ ┣ 📜PlaceInformation.jsx
+ ┃ ┃ ┣ 📜PlaceInformation.module.css
+ ┃ ┃ ┣ 📜PlaceItemCard.jsx
+ ┃ ┃ ┣ 📜PlaceItemCard.module.css
+ ┃ ┃ ┣ 📜PlaceItemCarousel.jsx
+ ┃ ┃ ┣ 📜PlaceItemCarousel.module.css
+ ┃ ┃ ┣ 📜PlaceReview.jsx
+ ┃ ┃ ┣ 📜PlaceReview.module.css
+ ┃ ┃ ┣ 📜ReviewImage.jsx
+ ┃ ┃ ┣ 📜ReviewImage.module.css
+ ┃ ┃ ┣ 📜ReviewSummary.jsx
+ ┃ ┃ ┣ 📜ReviewSummary.module.css
+ ┃ ┃ ┣ 📜WriteReview.jsx
+ ┃ ┃ ┗ 📜WriteReview.module.css
+ ┃ ┣ 📂MoviePageComponents
+ ┃ ┃ ┣ 📜Movie.jsx
+ ┃ ┃ ┣ 📜Movie.module.css
+ ┃ ┃ ┣ 📜MovieList.jsx
+ ┃ ┃ ┗ 📜MovieList.module.css
+ ┃ ┣ 📂MyPageComponents
+ ┃ ┃ ┣ 📜DeleteUser.jsx
+ ┃ ┃ ┣ 📜DeleteUser.module.css
+ ┃ ┃ ┣ 📜EditEmail.jsx
+ ┃ ┃ ┣ 📜EditEmail.module.css
+ ┃ ┃ ┣ 📜EditName.jsx
+ ┃ ┃ ┣ 📜EditName.module.css
+ ┃ ┃ ┣ 📜EditPassword.jsx
+ ┃ ┃ ┣ 📜EditPassword.module.css
+ ┃ ┃ ┣ 📜EditReview.jsx
+ ┃ ┃ ┣ 📜EditReview.module.css
+ ┃ ┃ ┣ 📜FavoriteList.jsx
+ ┃ ┃ ┣ 📜FavoriteList.module.css
+ ┃ ┃ ┣ 📜MyInformation.jsx
+ ┃ ┃ ┣ 📜MyInformation.module.css
+ ┃ ┃ ┣ 📜MyReview.jsx
+ ┃ ┃ ┣ 📜MyReview.module.css
+ ┃ ┃ ┣ 📜MyTravelList.jsx
+ ┃ ┃ ┣ 📜MyTravelList.module.css
+ ┃ ┃ ┣ 📜UserDetail.jsx
+ ┃ ┃ ┗ 📜UserDetail.module.css
+ ┃ ┣ 📂NewPlanPageComponents
+ ┃ ┃ ┣ 📜DayComponent.jsx
+ ┃ ┃ ┣ 📜DayComponent.module.css
+ ┃ ┃ ┣ 📜EditNote.jsx
+ ┃ ┃ ┣ 📜EditNote.module.css
+ ┃ ┃ ┣ 📜KakaoMap.jsx
+ ┃ ┃ ┣ 📜Note.jsx
+ ┃ ┃ ┣ 📜Note.module.css
+ ┃ ┃ ┣ 📜NoteCard.jsx
+ ┃ ┃ ┣ 📜NoteCard.module.css
+ ┃ ┃ ┣ 📜PlaceCard.jsx
+ ┃ ┃ ┣ 📜PlaceCard.module.css
+ ┃ ┃ ┣ 📜SearchPlace.jsx
+ ┃ ┃ ┣ 📜SearchPlace.module.css
+ ┃ ┃ ┣ 📜SelectPlaceIcon.jsx
+ ┃ ┃ ┣ 📜SelectPlaceIcon.module.css
+ ┃ ┃ ┣ 📜Time.jsx
+ ┃ ┃ ┗ 📜Time.module.css
+ ┃ ┣ 📂ParkPageComponents
+ ┃ ┃ ┣ 📜ParkCategory.jsx
+ ┃ ┃ ┣ 📜ParkCategory.module.css
+ ┃ ┃ ┣ 📜ParkIcon.jsx
+ ┃ ┃ ┣ 📜ParkIcon.module.css
+ ┃ ┃ ┣ 📜ParkSelect.jsx
+ ┃ ┃ ┗ 📜ParkSelect.module.css
+ ┃ ┣ 📂PlayPageComponents
+ ┃ ┃ ┣ 📜PlaceIcon.jsx
+ ┃ ┃ ┣ 📜PlaceIcon.module.css
+ ┃ ┃ ┣ 📜PlayCategory.jsx
+ ┃ ┃ ┣ 📜PlayCategory.module.css
+ ┃ ┃ ┣ 📜PlayCategoryCard.jsx
+ ┃ ┃ ┣ 📜PlayCategoryCard.module.css
+ ┃ ┃ ┣ 📜PlayFirstType.jsx
+ ┃ ┃ ┣ 📜PlayFirstType.module.css
+ ┃ ┃ ┣ 📜PlaySecondType.jsx
+ ┃ ┃ ┣ 📜PlaySecondType.module.css
+ ┃ ┃ ┣ 📜PlaySelect.jsx
+ ┃ ┃ ┣ 📜PlaySelect.module.css
+ ┃ ┃ ┣ 📜PlayThirdType.jsx
+ ┃ ┃ ┗ 📜PlayThirdType.module.css
+ ┃ ┣ 📂TravelCourseComponents
+ ┃ ┃ ┣ 📜Date.css
+ ┃ ┃ ┣ 📜Date.jsx
+ ┃ ┃ ┣ 📜DateComponent.module.css
+ ┃ ┃ ┣ 📜EditDateModal.jsx
+ ┃ ┃ ┣ 📜EditDateModal.module.css
+ ┃ ┃ ┣ 📜FirstStep.jsx
+ ┃ ┃ ┣ 📜FirstStep.module.css
+ ┃ ┃ ┣ 📜KoreaPlaceIcon.jsx
+ ┃ ┃ ┣ 📜KoreaPlaceIcon.module.css
+ ┃ ┃ ┣ 📜MyPlan.jsx
+ ┃ ┃ ┣ 📜MyPlan.module.css
+ ┃ ┃ ┣ 📜NewPlan.jsx
+ ┃ ┃ ┣ 📜NewPlan.module.css
+ ┃ ┃ ┣ 📜SecondStep.jsx
+ ┃ ┃ ┣ 📜SecondStep.module.css
+ ┃ ┃ ┣ 📜SelectDate.jsx
+ ┃ ┃ ┗ 📜SelectDate.module.css
+ ┃ ┣ 📂UserComponents
+ ┃ ┃ ┣ 📜FindId.jsx
+ ┃ ┃ ┣ 📜FindId.module.css
+ ┃ ┃ ┣ 📜FindPass.jsx
+ ┃ ┃ ┣ 📜FindPass.module.css
+ ┃ ┃ ┣ 📜Login.jsx
+ ┃ ┃ ┣ 📜Login.module.css
+ ┃ ┃ ┣ 📜Signup.jsx
+ ┃ ┃ ┣ 📜Signup.module.css
+ ┃ ┃ ┣ 📜UserModal.jsx
+ ┃ ┃ ┗ 📜UserModal.module.css
+ ┃ ┣ 📜Footer.jsx
+ ┃ ┣ 📜Footer.module.css
+ ┃ ┣ 📜Header.jsx
+ ┃ ┣ 📜Header.module.css
+ ┃ ┣ 📜Loading.jsx
+ ┃ ┣ 📜Loading.module.css
+ ┃ ┣ 📜MainNavigation.jsx
+ ┃ ┣ 📜MainNavigation.module.css
+ ┃ ┣ 📜Route.jsx
+ ┃ ┣ 📜Route.module.css
+ ┃ ┣ 📜SearchPlaceLoading.jsx
+ ┃ ┣ 📜SearchPlaceLoading.module.css
+ ┃ ┣ 📜SetTimeOutModal.jsx
+ ┃ ┗ 📜SetTimeOutModal.module.css
+ ┣ 📂hooks
+ ┃ ┣ 📜useAuthFunction.js
+ ┃ ┗ 📜useFetchPlaceItem.js
+ ┣ 📂image
+ ┃ ┣ 📜art-gallery.png
+ ┃ ┣ 📜bar.png
+ ┃ ┣ 📜busan.jpg
+ ┃ ┣ 📜calendar.png
+ ┃ ┣ 📜column.png
+ ┃ ┣ 📜ediya_coffee.png
+ ┃ ┣ 📜endLocation.png
+ ┃ ┣ 📜escape.png
+ ┃ ┣ 📜header_bg.png
+ ┃ ┣ 📜historic-site.png
+ ┃ ┣ 📜homeImg.jpg
+ ┃ ┣ 📜hotel.png
+ ┃ ┣ 📜jeju.jpg
+ ┃ ┣ 📜main_page_movie_img.jpg
+ ┃ ┣ 📜main_page_section_img.jpg
+ ┃ ┣ 📜mega_coffee.png
+ ┃ ┣ 📜microphone.png
+ ┃ ┣ 📜midLocation.png
+ ┃ ┣ 📜monitor.png
+ ┃ ┣ 📜motel.png
+ ┃ ┣ 📜mountain.jpg
+ ┃ ┣ 📜movie-ticket.png
+ ┃ ┣ 📜museum.png
+ ┃ ┣ 📜no_image.jpg
+ ┃ ┣ 📜park.png
+ ┃ ┣ 📜pc_room.png
+ ┃ ┣ 📜place.png
+ ┃ ┣ 📜popcorn.png
+ ┃ ┣ 📜resort.png
+ ┃ ┣ 📜route.png
+ ┃ ┣ 📜sauna.png
+ ┃ ┣ 📜seoul.jpg
+ ┃ ┣ 📜shopping.png
+ ┃ ┣ 📜sokcho.jpg
+ ┃ ┣ 📜Spinner.gif
+ ┃ ┣ 📜starbucks.png
+ ┃ ┣ 📜startLocation.png
+ ┃ ┣ 📜twosome_coffee.jpg
+ ┃ ┣ 📜wooden-house.png
+ ┃ ┗ 📜zoo.png
+ ┣ 📂layout
+ ┃ ┣ 📜Modal.js
+ ┃ ┣ 📜Modal.module.css
+ ┃ ┣ 📜PlaceDetailModal.js
+ ┃ ┗ 📜PlaceDetailModal.module.css
+ ┣ 📂loader
+ ┃ ┗ 📜DateFetch.js
+ ┣ 📂page
+ ┃ ┣ 📂detailPage
+ ┃ ┃ ┣ 📜CafePage.jsx
+ ┃ ┃ ┣ 📜CafePage.module.css
+ ┃ ┃ ┣ 📜DayComponentPage.jsx
+ ┃ ┃ ┣ 📜DayComponentPage.module.css
+ ┃ ┃ ┣ 📜FoodStorePage.jsx
+ ┃ ┃ ┣ 📜FoodStorePage.module.css
+ ┃ ┃ ┣ 📜HotelPage.jsx
+ ┃ ┃ ┣ 📜HotelPage.module.css
+ ┃ ┃ ┣ 📜MoviePage.jsx
+ ┃ ┃ ┣ 📜MoviePage.module.css
+ ┃ ┃ ┣ 📜Mypage.jsx
+ ┃ ┃ ┣ 📜MyPage.module.css
+ ┃ ┃ ┣ 📜ParkPage.jsx
+ ┃ ┃ ┣ 📜ParkPage.module.css
+ ┃ ┃ ┣ 📜PlayPage.jsx
+ ┃ ┃ ┣ 📜PlayPage.module.css
+ ┃ ┃ ┣ 📜TravelCourse.module.css
+ ┃ ┃ ┗ 📜TravelCoursePage.jsx
+ ┃ ┣ 📜FindIdPage.jsx
+ ┃ ┣ 📜FindIdPage.module.css
+ ┃ ┣ 📜FindPassPage.jsx
+ ┃ ┣ 📜FindPassPage.module.css
+ ┃ ┣ 📜HomePage.jsx
+ ┃ ┣ 📜Homepage.module.css
+ ┃ ┣ 📜MainPage.jsx
+ ┃ ┣ 📜Mainpage.module.css
+ ┃ ┣ 📜Root.jsx
+ ┃ ┣ 📜SignupPage.jsx
+ ┃ ┗ 📜SignupPage.module.css
+ ┣ 📂store
+ ┃ ┣ 📜auth-context.js
+ ┃ ┣ 📜AuthProvider.js
+ ┃ ┣ 📜login-context.js
+ ┃ ┗ 📜LoginProvider.js
+ ┣ 📜App.css
+ ┣ 📜App.js
+ ┣ 📜App.test.js
+ ┣ 📜index.css
+ ┣ 📜index.js
+ ┣ 📜reportWebVitals.js
+ ┗ 📜setupTests.js
 ```
