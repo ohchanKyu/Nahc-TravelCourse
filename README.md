@@ -1,4 +1,4 @@
-<h1 align="center">$\bf{\large{\color{#201d2e} Nahc \ TravelCourse }}$</h1>
+<h1 align="center">$\bf{\large{\color{aqua} Nahc \ TravelCourse }}$</h1>
 <h3 align="center">
     Nahc 여행 플랫폼 사이트
 </h3>
