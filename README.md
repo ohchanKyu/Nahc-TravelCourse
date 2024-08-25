@@ -163,7 +163,7 @@ Triple 어플을 응용한 웹 사이트이다. <br>
 
      * 리뷰 등록 UI
        <p align="left">
-         <img src="https://github.com/user-attachments/assets/1095d8ba-da67-4931-9d12-98c0a241f826"/>
+         <img width="400px" src="https://github.com/user-attachments/assets/1095d8ba-da67-4931-9d12-98c0a241f826"/>
        </p>
 
 <br> 
