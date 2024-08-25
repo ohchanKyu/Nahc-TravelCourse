@@ -135,30 +135,30 @@ Triple 어플을 응용한 웹 사이트이다. <br>
    #### 사용자 UI
      * 플래너 생성 UI
        <p align="left">
-         <img src="https://github.com/user-attachments/assets/24ced2f8-ca2c-46f7-b632-0a51a216d305"/>
+         <img width="800px" src="https://github.com/user-attachments/assets/24ced2f8-ca2c-46f7-b632-0a51a216d305"/>
        </p>
        <p align="left">
-         <img src="https://github.com/user-attachments/assets/d152af09-8dde-49f4-8244-2edff03f2bf9"/>
+         <img width="800px" src="https://github.com/user-attachments/assets/d152af09-8dde-49f4-8244-2edff03f2bf9"/>
        </p>
        <p align="left">
-         <img src="https://github.com/user-attachments/assets/4a8aed39-f1a7-43ec-b92e-2cbdfcf91fae"/>
+         <img width="800px" src="https://github.com/user-attachments/assets/4a8aed39-f1a7-43ec-b92e-2cbdfcf91fae"/>
        </p>
        
      * 플래너 등록 UI
        <p align="left">
-         <img src="https://github.com/user-attachments/assets/45d679a4-0d6a-4118-8e67-0b2a99758b11"/>
-         <img src="https://github.com/user-attachments/assets/5dc0e0d0-4ff0-4096-a30f-02b072173fd3"/>
+         <img width="800px" src="https://github.com/user-attachments/assets/45d679a4-0d6a-4118-8e67-0b2a99758b11"/>
+         <img width="800px" src="https://github.com/user-attachments/assets/5dc0e0d0-4ff0-4096-a30f-02b072173fd3"/>
        </p>
 
      * 장소 / 메모 / 시간 추가 UI
        <p align="left">
-         <img src="https://github.com/user-attachments/assets/01cfc8c6-0fa3-4871-ab3f-b3d8e1602fc1"/>
+         <img width="400px" src="https://github.com/user-attachments/assets/01cfc8c6-0fa3-4871-ab3f-b3d8e1602fc1"/>
        </p>
        <p align="left">
-         <img src="https://github.com/user-attachments/assets/9fa5749d-44f2-4cb4-ad60-da101695d906"/>
+         <img width="400px" src="https://github.com/user-attachments/assets/9fa5749d-44f2-4cb4-ad60-da101695d906"/>
        </p>
        <p align="left">
-         <img src="https://github.com/user-attachments/assets/0cb6d4c8-8879-476e-ac3b-61467bbf501c"/>
+         <img width="400px" src="https://github.com/user-attachments/assets/0cb6d4c8-8879-476e-ac3b-61467bbf501c"/>
        </p>
 
      * 리뷰 등록 UI
