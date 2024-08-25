@@ -1,4 +1,4 @@
-<h1 align="center">$\bf{\large{\color{#0aba16} Nahc \ ShoppingMall }}$</h1>
+<h1 align="center">$\bf{\large{\color{#201d2e} Nahc \ TravelCourse }}$</h1>
 <h3 align="center">
     Nahc 여행 플랫폼 사이트
 </h3>
@@ -27,10 +27,10 @@ Triple 어플을 응용한 웹 사이트이다. <br>
 <br> 
 
 ### 개발 환경
-<p>$\bf{\large{\color{#0aba16} FrontEnd \ : HTML / css / JavaScript }}$</p>
-<p>$\bf{\large{\color{#0aba16} BackEnd \ : Java / MySQL }}$</p>
-<p>$\bf{\large{\color{#0aba16} Framework \ : Spring boot / React }}$</p>
-<p>$\bf{\large{\color{#0aba16} Framework \ Main \  Dependency}}$</p>
+<p>$\bf{\large{\color{#201d2e} FrontEnd \ : HTML / css / JavaScript }}$</p>
+<p>$\bf{\large{\color{#201d2e} BackEnd \ : Java / MySQL }}$</p>
+<p>$\bf{\large{\color{#201d2e} Framework \ : Spring boot / React }}$</p>
+<p>$\bf{\large{\color{#201d2e} Framework \ Main \  Dependency}}$</p>
 
 - [x] Jpa
 - [x] Maven
@@ -42,15 +42,15 @@ Triple 어플을 응용한 웹 사이트이다. <br>
 <br>
 
 ### 데이터 및 API
-- <p>$\bf{\large{\color{#0aba16} Kakao \ API  }}$</p>
+- <p>$\bf{\large{\color{#201d2e} Kakao \ API  }}$</p>
   
   - Kakao API를 통해 위,경도 변환 및 근처 장소 검색
     
-- <p>$\bf{\large{\color{#0aba16} Google \ API  }}$</p>
+- <p>$\bf{\large{\color{#201d2e} Google \ API  }}$</p>
   
   - Google API를 통해 장소 상제 정보 및 장소 이미지 데이터 획득
     
-- <p>$\bf{\large{\color{#0aba16} KmDB \ / Kobis \ API  }}$</p>
+- <p>$\bf{\large{\color{#201d2e} KmDB \ / Kobis \ API  }}$</p>
   
   - KmDB / Kobis API를 통해 박스오피스 영화 정보 및 영화 썸네일 포스트 획득
   
